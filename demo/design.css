@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*body{
+  margin: 2rem ;
+  padding: 1rem;
+  border: 1rem;
+  border-radius: 1rem;
+  box-shadow: black;
+}*/
+.head {
+    width: 100%;
+    height: 100vh;
+    /*overflow: hidden;*/
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url(./back.png);
+    background-size: cover;
+    justify-content: center;
+    animation: change 60s infinite ease-in-out;
+}
+
+@keyframes change {
+    30% {
+        background-image: url(./back.png);
+    }
+
+    55% {
+        background-image: url(./back1.jpg);
+    }
+
+    100% {
+        background-image: url(./back2.png);
+    }
+}
+
+.logo-title {
+    text-decoration: none;
+    position: fixed;
+    font-size: 3rem;
+    padding: 2rem;
+    font-weight: 500;
+    color: orangered;
+}
+
+.nav {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 5rem;
+    align-items: center;
+    justify-content: end;
+    margin-right: 5rem;
+}
+
+.nav-con {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(225, 5, 67);
+    text-shadow: 1rem black;
+}
+.nav-con:hover{
+    color: aquamarine;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+.dont-have-account{
+font: 700;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: aqua;
+}
+.btn-join {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    color: rgb(161, 170, 32);
+    background-color: wheat;
+    border: 2rem;
+    border-radius: .3rem;
+}
+.btn-join:hover{
+    background-color: rgb(207, 180, 30);
+    color: bisque;
+}
+.login-form{
+    background-color: aqua;
+    background: transparent;
+    padding: 2rem 3rem;
+}
+.loginfo{
+    padding: 1rem 4rem;
+    border: 5px;
+    font-size: large;
+    border-radius: 5px;
+}
+.remember{
+    font-size: large;
+    color: rgb(15, 15, 147);
+    font: bold;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn-login {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    color: rgb(5, 48, 61);
+    background-color: rgb(234, 53, 53);
+    border: 2rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    border-radius: .3rem;
+}
+.btn-login:hover{
+    background-color: aqua;
+}
+.forget-pass{
+    margin-left: 5rem;
+    color: red;
+    font-weight: 600;
+}
+/* About us section */
+.about-us{
+    margin: 0 auto;
+    padding: 1rem;
+    background: linear-gradient(
+    to bottom, wheat, white
+  );
+}
+/*
+.about-us-header{
+    margin-left: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-size: 3rem;
+    color: rgb(19, 90, 90);
+
+}*/
+.about-us-des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem;
+}
+.about-us-text{
+    padding: 5rem;
+    background-color: whitesmoke;
+    background: linear-gradient(
+    to bottom, whitesmoke, white
+  );
+    border: 1rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;   
+}
+.users{
+    display: flex;
+    gap:1.5rem;
+    padding: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.users-num{
+
+    color: rgb(4, 4, 41);
+    text-align: center;
+    padding: 1rem;
+    border: 1rem;
+    border-radius: 2rem;
+}
+.quotes{
+    margin: 0 auto;
+    padding: 5rem;
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(114, 10, 10);
+}
+/* Story section */
+.reviews-section {
+  position: relative;
+}
+.reviews-section .parent {
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+.reviews-section .top {
+  text-align: center;
+  margin-bottom: 16rem;
+}
+.reviews-section .top h1 {
+  font-size: 5.4rem;
+  color: var(--font-primary);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.reviews-section .top p {  
+  color: rgba(0, 0, 0, 0.8);
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto;
+  line-height: 1.9;
+}
+.reviews {
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  position: relative;
+  /* display: inline-block; */
+}
+.reviews .review {
+  /* align-self: baseline; */
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.04);
+  position: relative;
+  text-align: center;
+}
+.review .avatar {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  top: -4rem;
+  left: calc(50% - 4rem);
+  background-color: #fff;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.review .avatar img {
+  width: 100%;
+}
+.reviews .review.current {
+  margin-top: -10rem;
+}
+.reviews .review p {
+  margin-top: 4rem;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.75);
+}
+.reviews .review hr {
+  margin: 2rem 0;
+}
+.reviews .review .info h4 {
+  font-size: 2.2rem;
+  color: var(--font-primary);
+  line-height: 1.3;
+}
+.reviews .review .info small {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 300;
+}
+.reviews .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+  position: absolute;
+  bottom: 0;
+  gap: 2rem;
+  left: calc(50% - 5rem);
+}
+.reviews .arrow {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.reviews .arrow:hover {
+  background-color: #286F6C;
+  color: #fff;
+}
+
+.line{
+  height: 5px;
+  background: linear-gradient(
+    to bottom,
+    transparent 2px,
+    black 2px,
+    black 3px,
+    transparent 3px
+  );
+}
+
+/* footer */
+.bottom{
+  
+    padding: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.logo-bottom{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+}
+.bottom .left{
+    font-size: 2rem;
+}
+.bottom .right{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.bk{
+    text-decoration: none;
+}
